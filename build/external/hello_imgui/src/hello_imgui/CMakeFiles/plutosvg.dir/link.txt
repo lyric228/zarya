@@ -1,0 +1,2 @@
+/usr/bin/ar qc libplutosvg.a CMakeFiles/plutosvg.dir/__/__/__/__/plutosvg_source/source/plutosvg.c.o
+/usr/bin/ranlib libplutosvg.a
