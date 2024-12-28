@@ -1,7 +1,7 @@
-#!/bin/bash
+@echo off
 
 cd build
 cmake ..
 make -j 4
-./cheat
+.\cheat.exe
 cd ..
