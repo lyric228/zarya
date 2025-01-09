@@ -7,5 +7,5 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Linux - 6.12.6-arch1-1 - x86_64
+      The system is: Linux - 6.12.8-arch1-1 - x86_64
 ...

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build//CMakeFiles/progress.marks
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles /home/lyrix/GitHub/zarya/build/_deps/plutovg-build//CMakeFiles/progress.marks
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/clean
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/preinstall
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/preinstall
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/plutovg-build/CMakeFiles/plutovg.dir/rule:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
 .PHONY : _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ plutovg: _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
 
 # fast build rule for target.
 plutovg/fast:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/build
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/build
 .PHONY : plutovg/fast
 
 source/plutovg-blend.o: source/plutovg-blend.c.o
@@ -180,7 +180,7 @@ source/plutovg-blend.o: source/plutovg-blend.c.o
 
 # target to build an object file
 source/plutovg-blend.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.o
 .PHONY : source/plutovg-blend.c.o
 
 source/plutovg-blend.i: source/plutovg-blend.c.i
@@ -188,7 +188,7 @@ source/plutovg-blend.i: source/plutovg-blend.c.i
 
 # target to preprocess a source file
 source/plutovg-blend.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.i
 .PHONY : source/plutovg-blend.c.i
 
 source/plutovg-blend.s: source/plutovg-blend.c.s
@@ -196,7 +196,7 @@ source/plutovg-blend.s: source/plutovg-blend.c.s
 
 # target to generate assembly for a file
 source/plutovg-blend.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-blend.c.s
 .PHONY : source/plutovg-blend.c.s
 
 source/plutovg-canvas.o: source/plutovg-canvas.c.o
@@ -204,7 +204,7 @@ source/plutovg-canvas.o: source/plutovg-canvas.c.o
 
 # target to build an object file
 source/plutovg-canvas.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.o
 .PHONY : source/plutovg-canvas.c.o
 
 source/plutovg-canvas.i: source/plutovg-canvas.c.i
@@ -212,7 +212,7 @@ source/plutovg-canvas.i: source/plutovg-canvas.c.i
 
 # target to preprocess a source file
 source/plutovg-canvas.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.i
 .PHONY : source/plutovg-canvas.c.i
 
 source/plutovg-canvas.s: source/plutovg-canvas.c.s
@@ -220,7 +220,7 @@ source/plutovg-canvas.s: source/plutovg-canvas.c.s
 
 # target to generate assembly for a file
 source/plutovg-canvas.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-canvas.c.s
 .PHONY : source/plutovg-canvas.c.s
 
 source/plutovg-font.o: source/plutovg-font.c.o
@@ -228,7 +228,7 @@ source/plutovg-font.o: source/plutovg-font.c.o
 
 # target to build an object file
 source/plutovg-font.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.o
 .PHONY : source/plutovg-font.c.o
 
 source/plutovg-font.i: source/plutovg-font.c.i
@@ -236,7 +236,7 @@ source/plutovg-font.i: source/plutovg-font.c.i
 
 # target to preprocess a source file
 source/plutovg-font.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.i
 .PHONY : source/plutovg-font.c.i
 
 source/plutovg-font.s: source/plutovg-font.c.s
@@ -244,7 +244,7 @@ source/plutovg-font.s: source/plutovg-font.c.s
 
 # target to generate assembly for a file
 source/plutovg-font.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-font.c.s
 .PHONY : source/plutovg-font.c.s
 
 source/plutovg-ft-math.o: source/plutovg-ft-math.c.o
@@ -252,7 +252,7 @@ source/plutovg-ft-math.o: source/plutovg-ft-math.c.o
 
 # target to build an object file
 source/plutovg-ft-math.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.o
 .PHONY : source/plutovg-ft-math.c.o
 
 source/plutovg-ft-math.i: source/plutovg-ft-math.c.i
@@ -260,7 +260,7 @@ source/plutovg-ft-math.i: source/plutovg-ft-math.c.i
 
 # target to preprocess a source file
 source/plutovg-ft-math.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.i
 .PHONY : source/plutovg-ft-math.c.i
 
 source/plutovg-ft-math.s: source/plutovg-ft-math.c.s
@@ -268,7 +268,7 @@ source/plutovg-ft-math.s: source/plutovg-ft-math.c.s
 
 # target to generate assembly for a file
 source/plutovg-ft-math.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-math.c.s
 .PHONY : source/plutovg-ft-math.c.s
 
 source/plutovg-ft-raster.o: source/plutovg-ft-raster.c.o
@@ -276,7 +276,7 @@ source/plutovg-ft-raster.o: source/plutovg-ft-raster.c.o
 
 # target to build an object file
 source/plutovg-ft-raster.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.o
 .PHONY : source/plutovg-ft-raster.c.o
 
 source/plutovg-ft-raster.i: source/plutovg-ft-raster.c.i
@@ -284,7 +284,7 @@ source/plutovg-ft-raster.i: source/plutovg-ft-raster.c.i
 
 # target to preprocess a source file
 source/plutovg-ft-raster.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.i
 .PHONY : source/plutovg-ft-raster.c.i
 
 source/plutovg-ft-raster.s: source/plutovg-ft-raster.c.s
@@ -292,7 +292,7 @@ source/plutovg-ft-raster.s: source/plutovg-ft-raster.c.s
 
 # target to generate assembly for a file
 source/plutovg-ft-raster.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-raster.c.s
 .PHONY : source/plutovg-ft-raster.c.s
 
 source/plutovg-ft-stroker.o: source/plutovg-ft-stroker.c.o
@@ -300,7 +300,7 @@ source/plutovg-ft-stroker.o: source/plutovg-ft-stroker.c.o
 
 # target to build an object file
 source/plutovg-ft-stroker.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.o
 .PHONY : source/plutovg-ft-stroker.c.o
 
 source/plutovg-ft-stroker.i: source/plutovg-ft-stroker.c.i
@@ -308,7 +308,7 @@ source/plutovg-ft-stroker.i: source/plutovg-ft-stroker.c.i
 
 # target to preprocess a source file
 source/plutovg-ft-stroker.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.i
 .PHONY : source/plutovg-ft-stroker.c.i
 
 source/plutovg-ft-stroker.s: source/plutovg-ft-stroker.c.s
@@ -316,7 +316,7 @@ source/plutovg-ft-stroker.s: source/plutovg-ft-stroker.c.s
 
 # target to generate assembly for a file
 source/plutovg-ft-stroker.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-ft-stroker.c.s
 .PHONY : source/plutovg-ft-stroker.c.s
 
 source/plutovg-matrix.o: source/plutovg-matrix.c.o
@@ -324,7 +324,7 @@ source/plutovg-matrix.o: source/plutovg-matrix.c.o
 
 # target to build an object file
 source/plutovg-matrix.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.o
 .PHONY : source/plutovg-matrix.c.o
 
 source/plutovg-matrix.i: source/plutovg-matrix.c.i
@@ -332,7 +332,7 @@ source/plutovg-matrix.i: source/plutovg-matrix.c.i
 
 # target to preprocess a source file
 source/plutovg-matrix.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.i
 .PHONY : source/plutovg-matrix.c.i
 
 source/plutovg-matrix.s: source/plutovg-matrix.c.s
@@ -340,7 +340,7 @@ source/plutovg-matrix.s: source/plutovg-matrix.c.s
 
 # target to generate assembly for a file
 source/plutovg-matrix.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-matrix.c.s
 .PHONY : source/plutovg-matrix.c.s
 
 source/plutovg-paint.o: source/plutovg-paint.c.o
@@ -348,7 +348,7 @@ source/plutovg-paint.o: source/plutovg-paint.c.o
 
 # target to build an object file
 source/plutovg-paint.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.o
 .PHONY : source/plutovg-paint.c.o
 
 source/plutovg-paint.i: source/plutovg-paint.c.i
@@ -356,7 +356,7 @@ source/plutovg-paint.i: source/plutovg-paint.c.i
 
 # target to preprocess a source file
 source/plutovg-paint.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.i
 .PHONY : source/plutovg-paint.c.i
 
 source/plutovg-paint.s: source/plutovg-paint.c.s
@@ -364,7 +364,7 @@ source/plutovg-paint.s: source/plutovg-paint.c.s
 
 # target to generate assembly for a file
 source/plutovg-paint.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-paint.c.s
 .PHONY : source/plutovg-paint.c.s
 
 source/plutovg-path.o: source/plutovg-path.c.o
@@ -372,7 +372,7 @@ source/plutovg-path.o: source/plutovg-path.c.o
 
 # target to build an object file
 source/plutovg-path.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.o
 .PHONY : source/plutovg-path.c.o
 
 source/plutovg-path.i: source/plutovg-path.c.i
@@ -380,7 +380,7 @@ source/plutovg-path.i: source/plutovg-path.c.i
 
 # target to preprocess a source file
 source/plutovg-path.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.i
 .PHONY : source/plutovg-path.c.i
 
 source/plutovg-path.s: source/plutovg-path.c.s
@@ -388,7 +388,7 @@ source/plutovg-path.s: source/plutovg-path.c.s
 
 # target to generate assembly for a file
 source/plutovg-path.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-path.c.s
 .PHONY : source/plutovg-path.c.s
 
 source/plutovg-rasterize.o: source/plutovg-rasterize.c.o
@@ -396,7 +396,7 @@ source/plutovg-rasterize.o: source/plutovg-rasterize.c.o
 
 # target to build an object file
 source/plutovg-rasterize.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.o
 .PHONY : source/plutovg-rasterize.c.o
 
 source/plutovg-rasterize.i: source/plutovg-rasterize.c.i
@@ -404,7 +404,7 @@ source/plutovg-rasterize.i: source/plutovg-rasterize.c.i
 
 # target to preprocess a source file
 source/plutovg-rasterize.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.i
 .PHONY : source/plutovg-rasterize.c.i
 
 source/plutovg-rasterize.s: source/plutovg-rasterize.c.s
@@ -412,7 +412,7 @@ source/plutovg-rasterize.s: source/plutovg-rasterize.c.s
 
 # target to generate assembly for a file
 source/plutovg-rasterize.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-rasterize.c.s
 .PHONY : source/plutovg-rasterize.c.s
 
 source/plutovg-surface.o: source/plutovg-surface.c.o
@@ -420,7 +420,7 @@ source/plutovg-surface.o: source/plutovg-surface.c.o
 
 # target to build an object file
 source/plutovg-surface.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.o
 .PHONY : source/plutovg-surface.c.o
 
 source/plutovg-surface.i: source/plutovg-surface.c.i
@@ -428,7 +428,7 @@ source/plutovg-surface.i: source/plutovg-surface.c.i
 
 # target to preprocess a source file
 source/plutovg-surface.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.i
 .PHONY : source/plutovg-surface.c.i
 
 source/plutovg-surface.s: source/plutovg-surface.c.s
@@ -436,7 +436,7 @@ source/plutovg-surface.s: source/plutovg-surface.c.s
 
 # target to generate assembly for a file
 source/plutovg-surface.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/source/plutovg-surface.c.s
 .PHONY : source/plutovg-surface.c.s
 
 # Help Target
@@ -496,6 +496,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

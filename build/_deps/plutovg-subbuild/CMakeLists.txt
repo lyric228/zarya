@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(plutovg-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/sammycage/plutovg" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v0.0.8" "GIT_PROGRESS" "TRUE"
-                    SOURCE_DIR          "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src"
-                    BINARY_DIR          "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build"
+                    SOURCE_DIR          "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src"
+                    BINARY_DIR          "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

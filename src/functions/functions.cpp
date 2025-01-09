@@ -1,6 +1,7 @@
 #include "functions.h"
 
 
-void print(const std::string& text) {
-    cout << text << endl;
+template <typename T>
+void print(const T* text) {
+    std::cout << string_view(text) << std::endl;
 }

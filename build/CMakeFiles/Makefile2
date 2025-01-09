@@ -54,31 +54,31 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/zarya.dir/all
-all: external/hello_imgui/all
+all: libs/imgui_bundle/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/zarya.dir/codegen
-codegen: external/hello_imgui/codegen
+codegen: libs/imgui_bundle/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: external/hello_imgui/preinstall
+preinstall: libs/imgui_bundle/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/zarya.dir/clean
-clean: external/hello_imgui/clean
+clean: libs/imgui_bundle/clean
 .PHONY : clean
 
 #=============================================================================
@@ -123,120 +123,388 @@ _deps/plutovg-build/examples/clean: _deps/plutovg-build/examples/CMakeFiles/smil
 .PHONY : _deps/plutovg-build/examples/clean
 
 #=============================================================================
-# Directory level rules for directory external/hello_imgui
+# Directory level rules for directory libs/imgui_bundle
 
 # Recursive "all" directory target.
-external/hello_imgui/all: external/hello_imgui/src/all
-.PHONY : external/hello_imgui/all
+libs/imgui_bundle/all: libs/imgui_bundle/external/all
+.PHONY : libs/imgui_bundle/all
 
 # Recursive "codegen" directory target.
-external/hello_imgui/codegen: external/hello_imgui/src/codegen
-.PHONY : external/hello_imgui/codegen
+libs/imgui_bundle/codegen: libs/imgui_bundle/external/codegen
+.PHONY : libs/imgui_bundle/codegen
 
 # Recursive "preinstall" directory target.
-external/hello_imgui/preinstall: external/hello_imgui/src/preinstall
-.PHONY : external/hello_imgui/preinstall
+libs/imgui_bundle/preinstall: libs/imgui_bundle/external/preinstall
+.PHONY : libs/imgui_bundle/preinstall
 
 # Recursive "clean" directory target.
-external/hello_imgui/clean: external/hello_imgui/src/clean
-.PHONY : external/hello_imgui/clean
+libs/imgui_bundle/clean: libs/imgui_bundle/external/clean
+.PHONY : libs/imgui_bundle/clean
 
 #=============================================================================
-# Directory level rules for directory external/hello_imgui/src
+# Directory level rules for directory libs/imgui_bundle/external
 
 # Recursive "all" directory target.
-external/hello_imgui/src/all: external/hello_imgui/src/hello_imgui/all
-external/hello_imgui/src/all: external/hello_imgui/src/hello_imgui_remote/all
-.PHONY : external/hello_imgui/src/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/implot.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/immvision/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/nanovg/nanovg/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/ImGuiColorTextEdit/all
+libs/imgui_bundle/external/all: libs/imgui_bundle/external/immapp/immapp/all
+.PHONY : libs/imgui_bundle/external/all
 
 # Recursive "codegen" directory target.
-external/hello_imgui/src/codegen: external/hello_imgui/src/hello_imgui/codegen
-external/hello_imgui/src/codegen: external/hello_imgui/src/hello_imgui_remote/codegen
-.PHONY : external/hello_imgui/src/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/implot.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/immvision/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/nanovg/nanovg/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/ImGuiColorTextEdit/codegen
+libs/imgui_bundle/external/codegen: libs/imgui_bundle/external/immapp/immapp/codegen
+.PHONY : libs/imgui_bundle/external/codegen
 
 # Recursive "preinstall" directory target.
-external/hello_imgui/src/preinstall: external/hello_imgui/src/hello_imgui/preinstall
-external/hello_imgui/src/preinstall: external/hello_imgui/src/hello_imgui_remote/preinstall
-.PHONY : external/hello_imgui/src/preinstall
+libs/imgui_bundle/external/preinstall: libs/imgui_bundle/external/hello_imgui/hello_imgui/preinstall
+libs/imgui_bundle/external/preinstall: libs/imgui_bundle/external/immvision/preinstall
+libs/imgui_bundle/external/preinstall: libs/imgui_bundle/external/nanovg/nanovg/preinstall
+libs/imgui_bundle/external/preinstall: libs/imgui_bundle/external/ImGuiColorTextEdit/preinstall
+libs/imgui_bundle/external/preinstall: libs/imgui_bundle/external/immapp/immapp/preinstall
+.PHONY : libs/imgui_bundle/external/preinstall
 
 # Recursive "clean" directory target.
-external/hello_imgui/src/clean: external/hello_imgui/src/hello_imgui/clean
-external/hello_imgui/src/clean: external/hello_imgui/src/hello_imgui_remote/clean
-.PHONY : external/hello_imgui/src/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/implot.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/immvision/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/nanovg/nanovg/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/ImGuiColorTextEdit/clean
+libs/imgui_bundle/external/clean: libs/imgui_bundle/external/immapp/immapp/clean
+.PHONY : libs/imgui_bundle/external/clean
 
 #=============================================================================
-# Directory level rules for directory external/hello_imgui/src/hello_imgui
+# Directory level rules for directory libs/imgui_bundle/external/ImGuiColorTextEdit
 
 # Recursive "all" directory target.
-external/hello_imgui/src/hello_imgui/all: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
-external/hello_imgui/src/hello_imgui/all: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all
-external/hello_imgui/src/hello_imgui/all: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
-external/hello_imgui/src/hello_imgui/all: external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
-external/hello_imgui/src/hello_imgui/all: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
-external/hello_imgui/src/hello_imgui/all: _deps/plutovg-build/all
-.PHONY : external/hello_imgui/src/hello_imgui/all
+libs/imgui_bundle/external/ImGuiColorTextEdit/all: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/all
 
 # Recursive "codegen" directory target.
-external/hello_imgui/src/hello_imgui/codegen: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
-external/hello_imgui/src/hello_imgui/codegen: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/codegen
-external/hello_imgui/src/hello_imgui/codegen: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
-external/hello_imgui/src/hello_imgui/codegen: external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
-external/hello_imgui/src/hello_imgui/codegen: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
-external/hello_imgui/src/hello_imgui/codegen: _deps/plutovg-build/codegen
-.PHONY : external/hello_imgui/src/hello_imgui/codegen
+libs/imgui_bundle/external/ImGuiColorTextEdit/codegen: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/codegen
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/codegen
 
 # Recursive "preinstall" directory target.
-external/hello_imgui/src/hello_imgui/preinstall: _deps/plutovg-build/preinstall
-.PHONY : external/hello_imgui/src/hello_imgui/preinstall
+libs/imgui_bundle/external/ImGuiColorTextEdit/preinstall:
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/preinstall
 
 # Recursive "clean" directory target.
-external/hello_imgui/src/hello_imgui/clean: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
-external/hello_imgui/src/hello_imgui/clean: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/clean
-external/hello_imgui/src/hello_imgui/clean: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
-external/hello_imgui/src/hello_imgui/clean: external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
-external/hello_imgui/src/hello_imgui/clean: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
-external/hello_imgui/src/hello_imgui/clean: _deps/plutovg-build/clean
-.PHONY : external/hello_imgui/src/hello_imgui/clean
+libs/imgui_bundle/external/ImGuiColorTextEdit/clean: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/clean
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/clean
 
 #=============================================================================
-# Directory level rules for directory external/hello_imgui/src/hello_imgui_remote
+# Directory level rules for directory libs/imgui_bundle/external/hello_imgui/hello_imgui
 
 # Recursive "all" directory target.
-external/hello_imgui/src/hello_imgui_remote/all:
-.PHONY : external/hello_imgui/src/hello_imgui_remote/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/all
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/all
 
 # Recursive "codegen" directory target.
-external/hello_imgui/src/hello_imgui_remote/codegen:
-.PHONY : external/hello_imgui/src/hello_imgui_remote/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/codegen
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/codegen
 
 # Recursive "preinstall" directory target.
-external/hello_imgui/src/hello_imgui_remote/preinstall:
-.PHONY : external/hello_imgui/src/hello_imgui_remote/preinstall
+libs/imgui_bundle/external/hello_imgui/hello_imgui/preinstall: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/preinstall
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/preinstall
 
 # Recursive "clean" directory target.
-external/hello_imgui/src/hello_imgui_remote/clean:
-.PHONY : external/hello_imgui/src/hello_imgui_remote/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/hello_imgui/hello_imgui/src
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/all
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/codegen
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/preinstall: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/preinstall
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/preinstall: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/preinstall
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all: _deps/plutovg-build/all
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen: _deps/plutovg-build/codegen
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/preinstall: _deps/plutovg-build/preinstall
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean: _deps/plutovg-build/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/all:
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/codegen:
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/preinstall:
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/clean:
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui_remote/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immapp/immapp
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immapp/immapp/all: libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all
+.PHONY : libs/imgui_bundle/external/immapp/immapp/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immapp/immapp/codegen: libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/codegen
+.PHONY : libs/imgui_bundle/external/immapp/immapp/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immapp/immapp/preinstall:
+.PHONY : libs/imgui_bundle/external/immapp/immapp/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immapp/immapp/clean: libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/clean
+.PHONY : libs/imgui_bundle/external/immapp/immapp/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immvision
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immvision/all: libs/imgui_bundle/external/immvision/immvision/all
+.PHONY : libs/imgui_bundle/external/immvision/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immvision/codegen: libs/imgui_bundle/external/immvision/immvision/codegen
+.PHONY : libs/imgui_bundle/external/immvision/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immvision/preinstall: libs/imgui_bundle/external/immvision/immvision/preinstall
+.PHONY : libs/imgui_bundle/external/immvision/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immvision/clean: libs/imgui_bundle/external/immvision/immvision/clean
+.PHONY : libs/imgui_bundle/external/immvision/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immvision/immvision
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immvision/immvision/all: libs/imgui_bundle/external/immvision/immvision/src/all
+.PHONY : libs/imgui_bundle/external/immvision/immvision/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immvision/immvision/codegen: libs/imgui_bundle/external/immvision/immvision/src/codegen
+.PHONY : libs/imgui_bundle/external/immvision/immvision/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immvision/immvision/preinstall: libs/imgui_bundle/external/immvision/immvision/src/preinstall
+.PHONY : libs/imgui_bundle/external/immvision/immvision/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immvision/immvision/clean: libs/imgui_bundle/external/immvision/immvision/src/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immvision/immvision/src
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/all: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/all
+libs/imgui_bundle/external/immvision/immvision/src/all: libs/imgui_bundle/external/immvision/immvision/src/immvision/all
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/codegen: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/codegen
+libs/imgui_bundle/external/immvision/immvision/src/codegen: libs/imgui_bundle/external/immvision/immvision/src/immvision/codegen
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/preinstall: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/preinstall
+libs/imgui_bundle/external/immvision/immvision/src/preinstall: libs/imgui_bundle/external/immvision/immvision/src/immvision/preinstall
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/clean: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/clean
+libs/imgui_bundle/external/immvision/immvision/src/clean: libs/imgui_bundle/external/immvision/immvision/src/immvision/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immvision/immvision/src/immvision
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/all: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/codegen: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/codegen
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/preinstall:
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/clean: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/all: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/codegen: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/codegen
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/preinstall:
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/clean: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/clean
+
+#=============================================================================
+# Directory level rules for directory libs/imgui_bundle/external/nanovg/nanovg
+
+# Recursive "all" directory target.
+libs/imgui_bundle/external/nanovg/nanovg/all: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/all
+
+# Recursive "codegen" directory target.
+libs/imgui_bundle/external/nanovg/nanovg/codegen: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/codegen
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/codegen
+
+# Recursive "preinstall" directory target.
+libs/imgui_bundle/external/nanovg/nanovg/preinstall:
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/preinstall
+
+# Recursive "clean" directory target.
+libs/imgui_bundle/external/nanovg/nanovg/clean: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/clean
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/zarya.dir
 
 # All Build rule for target.
-CMakeFiles/zarya.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
-CMakeFiles/zarya.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all
-CMakeFiles/zarya.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
-CMakeFiles/zarya.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
-CMakeFiles/zarya.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/implot.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
 CMakeFiles/zarya.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+CMakeFiles/zarya.dir/all: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=93,94,95,96,97,98,99,100 "Built target zarya"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=97,98,99,100 "Built target zarya"
 .PHONY : CMakeFiles/zarya.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zarya.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 99
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zarya.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : CMakeFiles/zarya.dir/rule
 
 # Convenience name for target.
@@ -246,7 +514,7 @@ zarya: CMakeFiles/zarya.dir/rule
 # codegen rule for target.
 CMakeFiles/zarya.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=93,94,95,96,97,98,99,100 "Finished codegen for target zarya"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=97,98,99,100 "Finished codegen for target zarya"
 .PHONY : CMakeFiles/zarya.dir/codegen
 
 # clean rule for target.
@@ -255,169 +523,649 @@ CMakeFiles/zarya.dir/clean:
 .PHONY : CMakeFiles/zarya.dir/clean
 
 #=============================================================================
-# Target rules for target external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui.dir
 
 # All Build rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/depend
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=91,92 "Built target stb_hello_imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=36,37,38,39 "Built target imgui"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule
+libs/imgui_bundle/external/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
-stb_hello_imgui: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule
-.PHONY : stb_hello_imgui
-
-# codegen rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=91,92 "Finished codegen for target stb_hello_imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
-
-# clean rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
-
-#=============================================================================
-# Target rules for target external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir
-
-# All Build rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
-external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/depend
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74 "Built target imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all
-
-# Build rule for subdir invocation for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/rule
-
-# Convenience name for target.
-imgui: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/rule
+imgui: libs/imgui_bundle/external/CMakeFiles/imgui.dir/rule
 .PHONY : imgui
 
 # codegen rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74 "Finished codegen for target imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/codegen
+libs/imgui_bundle/external/CMakeFiles/imgui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=36,37,38,39 "Finished codegen for target imgui"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui.dir/codegen
 
 # clean rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/clean:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/clean
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/clean
+libs/imgui_bundle/external/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui.dir/clean
 
 #=============================================================================
-# Target rules for target external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/implot.dir
 
 # All Build rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/depend
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=75,76 "Built target plutosvg"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/implot.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/implot.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/implot.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=80,81 "Built target implot"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot.dir/all
 
 # Build rule for subdir invocation for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule
+libs/imgui_bundle/external/CMakeFiles/implot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/implot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot.dir/rule
 
 # Convenience name for target.
-plutosvg: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule
+implot: libs/imgui_bundle/external/CMakeFiles/implot.dir/rule
+.PHONY : implot
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/implot.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=80,81 "Finished codegen for target implot"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/implot.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/implot3d.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot3d.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=82,83 "Built target implot3d"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot3d.dir/rule
+
+# Convenience name for target.
+implot3d: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/rule
+.PHONY : implot3d
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot3d.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=82,83 "Finished codegen for target implot3d"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot3d.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/implot3d.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot3d.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/implot3d.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=47,48,49 "Built target imgui_node_editor"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 95
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/rule
+
+# Convenience name for target.
+imgui_node_editor: libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/rule
+.PHONY : imgui_node_editor
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=47,48,49 "Finished codegen for target imgui_node_editor"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build.make libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build.make libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=33,34 "Built target im_file_dialog"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 51
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/rule
+
+# Convenience name for target.
+im_file_dialog: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/rule
+.PHONY : im_file_dialog
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build.make libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=33,34 "Finished codegen for target im_file_dialog"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build.make libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imguizmo.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build.make libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build.make libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=59,60,61,62,63 "Built target imguizmo"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 21
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/rule
+
+# Convenience name for target.
+imguizmo: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/rule
+.PHONY : imguizmo
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build.make libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=59,60,61,62,63 "Finished codegen for target imguizmo"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build.make libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=55,56 "Built target imgui_tex_inspect"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 51
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/rule
+
+# Convenience name for target.
+imgui_tex_inspect: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/rule
+.PHONY : imgui_tex_inspect
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=55,56 "Finished codegen for target imgui_tex_inspect"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=86,87 "Built target nvg_imgui"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 52
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/rule
+
+# Convenience name for target.
+nvg_imgui: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/rule
+.PHONY : nvg_imgui
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=86,87 "Finished codegen for target nvg_imgui"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_md.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/all: libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=45,46 "Built target imgui_md"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 92
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/rule
+
+# Convenience name for target.
+imgui_md: libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/rule
+.PHONY : imgui_md
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=45,46 "Finished codegen for target imgui_md"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=44 "Built target imgui_knobs"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/rule
+
+# Convenience name for target.
+imgui_knobs: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/rule
+.PHONY : imgui_knobs
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=44 "Finished codegen for target imgui_knobs"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imspinner.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build.make libs/imgui_bundle/external/CMakeFiles/imspinner.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build.make libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=84 "Built target imspinner"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imspinner.dir/rule
+
+# Convenience name for target.
+imspinner: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/rule
+.PHONY : imspinner
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build.make libs/imgui_bundle/external/CMakeFiles/imspinner.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=84 "Finished codegen for target imspinner"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imspinner.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imspinner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build.make libs/imgui_bundle/external/CMakeFiles/imspinner.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imspinner.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=57,58 "Built target imgui_toggle"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/rule
+
+# Convenience name for target.
+imgui_toggle: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/rule
+.PHONY : imgui_toggle
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=57,58 "Finished codegen for target imgui_toggle"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=43 "Built target imgui_command_palette"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/rule
+
+# Convenience name for target.
+imgui_command_palette: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/rule
+.PHONY : imgui_command_palette
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=43 "Finished codegen for target imgui_command_palette"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build.make libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build.make libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=35 "Built target imcoolbar"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/rule
+
+# Convenience name for target.
+imcoolbar: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/rule
+.PHONY : imcoolbar
+
+# codegen rule for target.
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build.make libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=35 "Finished codegen for target imcoolbar"
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build.make libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/clean
+.PHONY : libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=96 "Built target stb_hello_imgui"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule
+
+# Convenience name for target.
+stb_hello_imgui: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/rule
+.PHONY : stb_hello_imgui
+
+# codegen rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=96 "Finished codegen for target stb_hello_imgui"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=88 "Built target plutosvg"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule
+
+# Convenience name for target.
+plutosvg: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/rule
 .PHONY : plutosvg
 
 # codegen rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=75,76 "Finished codegen for target plutosvg"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=88 "Finished codegen for target plutosvg"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/codegen
 
 # clean rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/clean
 
 #=============================================================================
-# Target rules for target external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir
+# Target rules for target libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir
 
 # All Build rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/all
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/depend
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target hello_imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target hello_imgui"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
 
 # Build rule for subdir invocation for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 90
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 49
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule
 
 # Convenience name for target.
-hello_imgui: external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule
+hello_imgui: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/rule
 .PHONY : hello_imgui
 
 # codegen rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Finished codegen for target hello_imgui"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Finished codegen for target hello_imgui"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/codegen
 
 # clean rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/clean
 
 #=============================================================================
-# Target rules for target external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir
+# Target rules for target libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir
 
 # All Build rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/depend
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=1,2 "Built target glad"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=50,51,52,53,54 "Built target imgui_test_engine"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all
 
 # Build rule for subdir invocation for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/rule
 
 # Convenience name for target.
-glad: external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule
+imgui_test_engine: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/rule
+.PHONY : imgui_test_engine
+
+# codegen rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=50,51,52,53,54 "Finished codegen for target imgui_test_engine"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num= "Built target glad"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/rule
 .PHONY : glad
 
 # codegen rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=1,2 "Finished codegen for target glad"
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num= "Finished codegen for target glad"
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
-external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
-.PHONY : external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
+libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
+.PHONY : libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/plutovg-build/CMakeFiles/plutovg.dir
@@ -426,14 +1174,14 @@ external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/clean:
 _deps/plutovg-build/CMakeFiles/plutovg.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88 "Built target plutovg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=89,90,91,92,93,94 "Built target plutovg"
 .PHONY : _deps/plutovg-build/CMakeFiles/plutovg.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/plutovg-build/CMakeFiles/plutovg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/CMakeFiles/plutovg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
 
 # Convenience name for target.
@@ -443,7 +1191,7 @@ plutovg: _deps/plutovg-build/CMakeFiles/plutovg.dir/rule
 # codegen rule for target.
 _deps/plutovg-build/CMakeFiles/plutovg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/CMakeFiles/plutovg.dir/build.make _deps/plutovg-build/CMakeFiles/plutovg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target plutovg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=89,90,91,92,93,94 "Finished codegen for target plutovg"
 .PHONY : _deps/plutovg-build/CMakeFiles/plutovg.dir/codegen
 
 # clean rule for target.
@@ -458,14 +1206,14 @@ _deps/plutovg-build/CMakeFiles/plutovg.dir/clean:
 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=89,90 "Built target smiley"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=95 "Built target smiley"
 .PHONY : _deps/plutovg-build/examples/CMakeFiles/smiley.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
 
 # Convenience name for target.
@@ -475,13 +1223,199 @@ smiley: _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
 # codegen rule for target.
 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=89,90 "Finished codegen for target smiley"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=95 "Finished codegen for target smiley"
 .PHONY : _deps/plutovg-build/examples/CMakeFiles/smiley.dir/codegen
 
 # clean rule for target.
 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/clean:
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/clean
 .PHONY : _deps/plutovg-build/examples/CMakeFiles/smiley.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=79 "Built target immvision_gl_loader"
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/rule
+
+# Convenience name for target.
+immvision_gl_loader: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/rule
+.PHONY : immvision_gl_loader
+
+# codegen rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=79 "Finished codegen for target immvision_gl_loader"
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78 "Built target immvision"
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 27
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/rule
+
+# Convenience name for target.
+immvision: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/rule
+.PHONY : immvision
+
+# codegen rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78 "Finished codegen for target immvision"
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/clean
+.PHONY : libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build.make libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build.make libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=85 "Built target nanovg"
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/rule
+
+# Convenience name for target.
+nanovg: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/rule
+.PHONY : nanovg
+
+# codegen rule for target.
+libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build.make libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=85 "Finished codegen for target nanovg"
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build.make libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/clean
+.PHONY : libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build.make libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build.make libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=40,41,42 "Built target imgui_color_text_edit"
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 19
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/rule
+
+# Convenience name for target.
+imgui_color_text_edit: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/rule
+.PHONY : imgui_color_text_edit
+
+# codegen rule for target.
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build.make libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=40,41,42 "Finished codegen for target imgui_color_text_edit"
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build.make libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/clean
+.PHONY : libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/clean
+
+#=============================================================================
+# Target rules for target libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir
+
+# All Build rule for target.
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/implot.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/implot3d.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imspinner.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: _deps/plutovg-build/CMakeFiles/plutovg.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/all
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all: libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build.make libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build.make libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=64,65,66,67,68 "Built target immapp"
+.PHONY : libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all
+
+# Build rule for subdir invocation for target.
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 90
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
+.PHONY : libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/rule
+
+# Convenience name for target.
+immapp: libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/rule
+.PHONY : immapp
+
+# codegen rule for target.
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build.make libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=64,65,66,67,68 "Finished codegen for target immapp"
+.PHONY : libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/codegen
+
+# clean rule for target.
+libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build.make libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/clean
+.PHONY : libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,11 +1,11 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+#pragma once
 
 #include <iostream>
-#include <string>
+#include <locale>
+#include <string_view>
 
-using namespace std;
+using std::string_view;
 
-void print(const std::string& text);
 
-#endif
+template <typename T>
+void print(const T* text);

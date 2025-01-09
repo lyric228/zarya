@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zarya.dir/depend.make
@@ -72,156 +72,202 @@ include CMakeFiles/zarya.dir/flags.make
 CMakeFiles/zarya.dir/codegen:
 .PHONY : CMakeFiles/zarya.dir/codegen
 
+CMakeFiles/zarya.dir/src/events/events.cpp.o: CMakeFiles/zarya.dir/flags.make
+CMakeFiles/zarya.dir/src/events/events.cpp.o: /home/lyrix/GitHub/zarya/src/events/events.cpp
+CMakeFiles/zarya.dir/src/events/events.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zarya.dir/src/events/events.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/events/events.cpp.o -MF CMakeFiles/zarya.dir/src/events/events.cpp.o.d -o CMakeFiles/zarya.dir/src/events/events.cpp.o -c /home/lyrix/GitHub/zarya/src/events/events.cpp
+
+CMakeFiles/zarya.dir/src/events/events.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/events/events.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/events/events.cpp > CMakeFiles/zarya.dir/src/events/events.cpp.i
+
+CMakeFiles/zarya.dir/src/events/events.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/events/events.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/events/events.cpp -o CMakeFiles/zarya.dir/src/events/events.cpp.s
+
 CMakeFiles/zarya.dir/src/functions/functions.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/functions/functions.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/functions/functions.cpp
+CMakeFiles/zarya.dir/src/functions/functions.cpp.o: /home/lyrix/GitHub/zarya/src/functions/functions.cpp
 CMakeFiles/zarya.dir/src/functions/functions.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zarya.dir/src/functions/functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/functions/functions.cpp.o -MF CMakeFiles/zarya.dir/src/functions/functions.cpp.o.d -o CMakeFiles/zarya.dir/src/functions/functions.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/functions/functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/zarya.dir/src/functions/functions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/functions/functions.cpp.o -MF CMakeFiles/zarya.dir/src/functions/functions.cpp.o.d -o CMakeFiles/zarya.dir/src/functions/functions.cpp.o -c /home/lyrix/GitHub/zarya/src/functions/functions.cpp
 
 CMakeFiles/zarya.dir/src/functions/functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/functions/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/functions/functions.cpp > CMakeFiles/zarya.dir/src/functions/functions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/functions/functions.cpp > CMakeFiles/zarya.dir/src/functions/functions.cpp.i
 
 CMakeFiles/zarya.dir/src/functions/functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/functions/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/functions/functions.cpp -o CMakeFiles/zarya.dir/src/functions/functions.cpp.s
-
-CMakeFiles/zarya.dir/src/hook/hook.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/hook/hook.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/hook/hook.cpp
-CMakeFiles/zarya.dir/src/hook/hook.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/zarya.dir/src/hook/hook.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/hook/hook.cpp.o -MF CMakeFiles/zarya.dir/src/hook/hook.cpp.o.d -o CMakeFiles/zarya.dir/src/hook/hook.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/hook/hook.cpp
-
-CMakeFiles/zarya.dir/src/hook/hook.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/hook/hook.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/hook/hook.cpp > CMakeFiles/zarya.dir/src/hook/hook.cpp.i
-
-CMakeFiles/zarya.dir/src/hook/hook.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/hook/hook.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/hook/hook.cpp -o CMakeFiles/zarya.dir/src/hook/hook.cpp.s
-
-CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/imgui/app/app.cpp
-CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/imgui/app/app.cpp
-
-CMakeFiles/zarya.dir/src/imgui/app/app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/app/app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/imgui/app/app.cpp > CMakeFiles/zarya.dir/src/imgui/app/app.cpp.i
-
-CMakeFiles/zarya.dir/src/imgui/app/app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/app/app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/imgui/app/app.cpp -o CMakeFiles/zarya.dir/src/imgui/app/app.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/functions/functions.cpp -o CMakeFiles/zarya.dir/src/functions/functions.cpp.s
 
 CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/imgui/styles/styles.cpp
+CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o: /home/lyrix/GitHub/zarya/src/imgui/styles/styles.cpp
 CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/imgui/styles/styles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o -c /home/lyrix/GitHub/zarya/src/imgui/styles/styles.cpp
 
 CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/imgui/styles/styles.cpp > CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/imgui/styles/styles.cpp > CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.i
 
 CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/imgui/styles/styles.cpp -o CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/imgui/styles/styles.cpp -o CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.s
 
 CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/imgui/widgets/widgets.cpp
+CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o: /home/lyrix/GitHub/zarya/src/imgui/widgets/widgets.cpp
 CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/imgui/widgets/widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o -c /home/lyrix/GitHub/zarya/src/imgui/widgets/widgets.cpp
 
 CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/imgui/widgets/widgets.cpp > CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/imgui/widgets/widgets.cpp > CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.i
 
 CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/imgui/widgets/widgets.cpp -o CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/imgui/widgets/widgets.cpp -o CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.s
 
-CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/imgui/windows/windows.cpp
-CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/imgui/windows/windows.cpp
+CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o: CMakeFiles/zarya.dir/flags.make
+CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o: /home/lyrix/GitHub/zarya/src/imgui/window/window.cpp
+CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o -c /home/lyrix/GitHub/zarya/src/imgui/window/window.cpp
 
-CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/imgui/windows/windows.cpp > CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.i
+CMakeFiles/zarya.dir/src/imgui/window/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/window/window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/imgui/window/window.cpp > CMakeFiles/zarya.dir/src/imgui/window/window.cpp.i
 
-CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/imgui/windows/windows.cpp -o CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.s
+CMakeFiles/zarya.dir/src/imgui/window/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/window/window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/imgui/window/window.cpp -o CMakeFiles/zarya.dir/src/imgui/window/window.cpp.s
+
+CMakeFiles/zarya.dir/src/imgui/app.cpp.o: CMakeFiles/zarya.dir/flags.make
+CMakeFiles/zarya.dir/src/imgui/app.cpp.o: /home/lyrix/GitHub/zarya/src/imgui/app.cpp
+CMakeFiles/zarya.dir/src/imgui/app.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/zarya.dir/src/imgui/app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/imgui/app.cpp.o -MF CMakeFiles/zarya.dir/src/imgui/app.cpp.o.d -o CMakeFiles/zarya.dir/src/imgui/app.cpp.o -c /home/lyrix/GitHub/zarya/src/imgui/app.cpp
+
+CMakeFiles/zarya.dir/src/imgui/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/imgui/app.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/imgui/app.cpp > CMakeFiles/zarya.dir/src/imgui/app.cpp.i
+
+CMakeFiles/zarya.dir/src/imgui/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/imgui/app.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/imgui/app.cpp -o CMakeFiles/zarya.dir/src/imgui/app.cpp.s
 
 CMakeFiles/zarya.dir/src/main.cpp.o: CMakeFiles/zarya.dir/flags.make
-CMakeFiles/zarya.dir/src/main.cpp.o: /home/lyrix/Apps/vscode/projects/zarya/src/main.cpp
+CMakeFiles/zarya.dir/src/main.cpp.o: /home/lyrix/GitHub/zarya/src/main.cpp
 CMakeFiles/zarya.dir/src/main.cpp.o: CMakeFiles/zarya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/zarya.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/main.cpp.o -MF CMakeFiles/zarya.dir/src/main.cpp.o.d -o CMakeFiles/zarya.dir/src/main.cpp.o -c /home/lyrix/Apps/vscode/projects/zarya/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/zarya.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zarya.dir/src/main.cpp.o -MF CMakeFiles/zarya.dir/src/main.cpp.o.d -o CMakeFiles/zarya.dir/src/main.cpp.o -c /home/lyrix/GitHub/zarya/src/main.cpp
 
 CMakeFiles/zarya.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/zarya.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/Apps/vscode/projects/zarya/src/main.cpp > CMakeFiles/zarya.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lyrix/GitHub/zarya/src/main.cpp > CMakeFiles/zarya.dir/src/main.cpp.i
 
 CMakeFiles/zarya.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/zarya.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/Apps/vscode/projects/zarya/src/main.cpp -o CMakeFiles/zarya.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lyrix/GitHub/zarya/src/main.cpp -o CMakeFiles/zarya.dir/src/main.cpp.s
 
 # Object files for target zarya
 zarya_OBJECTS = \
+"CMakeFiles/zarya.dir/src/events/events.cpp.o" \
 "CMakeFiles/zarya.dir/src/functions/functions.cpp.o" \
-"CMakeFiles/zarya.dir/src/hook/hook.cpp.o" \
-"CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o" \
 "CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o" \
 "CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o" \
-"CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o" \
+"CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o" \
+"CMakeFiles/zarya.dir/src/imgui/app.cpp.o" \
 "CMakeFiles/zarya.dir/src/main.cpp.o"
 
 # External object files for target zarya
 zarya_EXTERNAL_OBJECTS =
 
+zarya: CMakeFiles/zarya.dir/src/events/events.cpp.o
 zarya: CMakeFiles/zarya.dir/src/functions/functions.cpp.o
-zarya: CMakeFiles/zarya.dir/src/hook/hook.cpp.o
-zarya: CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o
 zarya: CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o
 zarya: CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o
-zarya: CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o
+zarya: CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o
+zarya: CMakeFiles/zarya.dir/src/imgui/app.cpp.o
 zarya: CMakeFiles/zarya.dir/src/main.cpp.o
 zarya: CMakeFiles/zarya.dir/build.make
 zarya: CMakeFiles/zarya.dir/compiler_depend.ts
-zarya: external/hello_imgui/src/hello_imgui/libhello_imgui.a
-zarya: external/hello_imgui/src/hello_imgui/libstb_hello_imgui.a
-zarya: external/hello_imgui/src/hello_imgui/libimgui.a
-zarya: external/hello_imgui/src/hello_imgui/libplutosvg.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libhello_imgui.a
+zarya: libs/imgui_bundle/external/libimgui_node_editor.a
+zarya: libs/imgui_bundle/external/libimgui_md.a
+zarya: libs/imgui_bundle/external/immapp/immapp/libimmapp.a
+zarya: libs/imgui_bundle/external/libimgui_node_editor.a
+zarya: libs/imgui_bundle/external/libimgui_md.a
+zarya: libs/imgui_bundle/external/immapp/immapp/libimmapp.a
+zarya: libs/imgui_bundle/external/libimplot3d.a
+zarya: libs/imgui_bundle/external/libimguizmo.a
+zarya: libs/imgui_bundle/external/libimgui_tex_inspect.a
+zarya: libs/imgui_bundle/external/libnvg_imgui.a
+zarya: libs/imgui_bundle/external/nanovg/nanovg/libnanovg.a
+zarya: libs/imgui_bundle/external/libimgui_knobs.a
+zarya: libs/imgui_bundle/external/libimspinner.a
+zarya: libs/imgui_bundle/external/libimgui_toggle.a
+zarya: libs/imgui_bundle/external/libimgui_command_palette.a
+zarya: libs/imgui_bundle/external/libimcoolbar.a
+zarya: libs/imgui_bundle/external/ImGuiColorTextEdit/libimgui_color_text_edit.a
+zarya: libs/imgui_bundle/external/immvision/immvision/src/immvision/libimmvision.a
+zarya: libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/libimmvision_gl_loader.a
+zarya: /usr/lib/libGLX.so
+zarya: /usr/lib/libOpenGL.so
+zarya: _deps/opencv_fetch-install/lib/libopencv_imgcodecs.a
+zarya: _deps/opencv_fetch-install/lib/libopencv_imgproc.a
+zarya: _deps/opencv_fetch-install/lib/libopencv_core.a
+zarya: _deps/opencv_fetch-install/lib/opencv4/3rdparty/libittnotify.a
+zarya: _deps/opencv_fetch-install/lib/opencv4/3rdparty/libippiw.a
+zarya: _deps/opencv_fetch-install/lib/opencv4/3rdparty/libippicv.a
+zarya: /lib64/libjpeg.so
+zarya: /lib64/libwebp.so
+zarya: /lib64/libpng.so
+zarya: /lib64/libtiff.so
+zarya: /lib64/libz.so
+zarya: libs/imgui_bundle/external/libimplot.a
+zarya: libs/imgui_bundle/external/libim_file_dialog.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libhello_imgui.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libstb_hello_imgui.a
+zarya: /usr/lib/libglfw.so.3.4
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libglad.a
+zarya: libs/imgui_bundle/external/libimgui.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libimgui_test_engine.a
+zarya: libs/imgui_bundle/external/libimgui.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libimgui_test_engine.a
+zarya: libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/libplutosvg.a
 zarya: /usr/lib/libfreetype.so
 zarya: _deps/plutovg-build/libplutovg.a
 zarya: /usr/lib/libm.so
-zarya: /usr/lib/libglfw.so.3.4
-zarya: external/hello_imgui/src/hello_imgui/libglad.a
 zarya: CMakeFiles/zarya.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable zarya"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyrix/GitHub/zarya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable zarya"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zarya.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/.DS_Store /home/lyrix/Apps/vscode/projects/zarya/build/assets/.DS_Store
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/mipmap-anydpi-v26/ic_launcher.xml /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/mipmap-anydpi-v26/ic_launcher.xml
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/mipmap-xxxhdpi/ic_launcher_foreground.webp /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/mipmap-xxxhdpi/ic_launcher_foreground.webp
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/values/colors.xml /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/values/colors.xml
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/values/ic_launcher_background.xml /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/values/ic_launcher_background.xml
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/values/strings.xml /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/values/strings.xml
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/android/res/values/styles.xml /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/android/res/values/styles.xml
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/apple/Info.plist /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/apple/Info.plist
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/apple/Resources/ios/LaunchScreen.storyboard /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/apple/Resources/ios/LaunchScreen.storyboard
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/apple/Resources/ios/Readme.md /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/apple/Resources/ios/Readme.md
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/emscripten/custom.js /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/emscripten/custom.js
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/emscripten/shell.emscripten.html /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/emscripten/shell.emscripten.html
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/app_settings/icon.png /home/lyrix/Apps/vscode/projects/zarya/build/assets/app_settings/icon.png
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/fonts/DroidSans.ttf /home/lyrix/Apps/vscode/projects/zarya/build/assets/fonts/DroidSans.ttf
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/fonts/Font_Awesome_6_Free-Solid-900.otf /home/lyrix/Apps/vscode/projects/zarya/build/assets/fonts/Font_Awesome_6_Free-Solid-900.otf
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/fonts/GeoSans.ttf /home/lyrix/Apps/vscode/projects/zarya/build/assets/fonts/GeoSans.ttf
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/fonts/fontawesome-webfont.ttf /home/lyrix/Apps/vscode/projects/zarya/build/assets/fonts/fontawesome-webfont.ttf
-	/usr/bin/cmake -E copy_if_different /home/lyrix/Apps/vscode/projects/zarya/assets/world.jpg /home/lyrix/Apps/vscode/projects/zarya/build/assets/world.jpg
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/build/tmp/common_assets/fonts/Font_Awesome_6_Free-Solid-900.otf /home/lyrix/GitHub/zarya/build/assets/fonts/Font_Awesome_6_Free-Solid-900.otf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/.DS_Store /home/lyrix/GitHub/zarya/build/assets/.DS_Store
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/mipmap-anydpi-v26/ic_launcher.xml /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/mipmap-anydpi-v26/ic_launcher.xml
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/mipmap-xxxhdpi/ic_launcher_foreground.webp /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/mipmap-xxxhdpi/ic_launcher_foreground.webp
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/values/colors.xml /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/values/colors.xml
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/values/ic_launcher_background.xml /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/values/ic_launcher_background.xml
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/values/strings.xml /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/values/strings.xml
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/android/res/values/styles.xml /home/lyrix/GitHub/zarya/build/assets/app_settings/android/res/values/styles.xml
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/apple/Info.plist /home/lyrix/GitHub/zarya/build/assets/app_settings/apple/Info.plist
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/apple/Resources/ios/LaunchScreen.storyboard /home/lyrix/GitHub/zarya/build/assets/app_settings/apple/Resources/ios/LaunchScreen.storyboard
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/apple/Resources/ios/Readme.md /home/lyrix/GitHub/zarya/build/assets/app_settings/apple/Resources/ios/Readme.md
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/emscripten/custom.js /home/lyrix/GitHub/zarya/build/assets/app_settings/emscripten/custom.js
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/emscripten/shell.emscripten.html /home/lyrix/GitHub/zarya/build/assets/app_settings/emscripten/shell.emscripten.html
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/app_settings/icon.png /home/lyrix/GitHub/zarya/build/assets/app_settings/icon.png
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Akronim-Regular.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Akronim-Regular.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/DroidSans.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/DroidSans.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Inconsolata-Medium.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Inconsolata-Medium.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Roboto/LICENSE.txt /home/lyrix/GitHub/zarya/build/assets/fonts/Roboto/LICENSE.txt
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Roboto/Roboto-Bold.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Roboto/Roboto-Bold.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Roboto/Roboto-BoldItalic.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Roboto/Roboto-BoldItalic.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Roboto/Roboto-Regular.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Roboto/Roboto-Regular.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/Roboto/Roboto-RegularItalic.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/Roboto/Roboto-RegularItalic.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/SourceCodePro-Regular.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/SourceCodePro-Regular.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/fonts/fontawesome-webfont.ttf /home/lyrix/GitHub/zarya/build/assets/fonts/fontawesome-webfont.ttf
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/images/markdown_broken_image.png /home/lyrix/GitHub/zarya/build/assets/images/markdown_broken_image.png
+	/usr/bin/cmake -E copy_if_different /home/lyrix/GitHub/zarya/assets/images/world.png /home/lyrix/GitHub/zarya/build/assets/images/world.png
 
 # Rule to build all files generated by this target.
 CMakeFiles/zarya.dir/build: zarya
@@ -232,6 +278,6 @@ CMakeFiles/zarya.dir/clean:
 .PHONY : CMakeFiles/zarya.dir/clean
 
 CMakeFiles/zarya.dir/depend:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyrix/Apps/vscode/projects/zarya /home/lyrix/Apps/vscode/projects/zarya /home/lyrix/Apps/vscode/projects/zarya/build /home/lyrix/Apps/vscode/projects/zarya/build /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles/zarya.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyrix/GitHub/zarya /home/lyrix/GitHub/zarya /home/lyrix/GitHub/zarya/build /home/lyrix/GitHub/zarya/build /home/lyrix/GitHub/zarya/build/CMakeFiles/zarya.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/zarya.dir/depend
 

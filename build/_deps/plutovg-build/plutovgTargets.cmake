@@ -51,7 +51,7 @@ add_library(plutovg::plutovg STATIC IMPORTED)
 
 set_target_properties(plutovg::plutovg PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "PLUTOVG_BUILD_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src/include"
   INTERFACE_LINK_LIBRARIES "/usr/lib/libm.so"
 )
 
@@ -59,7 +59,7 @@ set_target_properties(plutovg::plutovg PROPERTIES
 set_property(TARGET plutovg::plutovg APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(plutovg::plutovg PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "C"
-  IMPORTED_LOCATION_RELWITHDEBINFO "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/libplutovg.a"
+  IMPORTED_LOCATION_RELWITHDEBINFO "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/libplutovg.a"
   )
 
 # This file does not depend on other imported targets which have

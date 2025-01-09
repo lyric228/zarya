@@ -1,14 +1,14 @@
 # Target labels
  plutovg-populate
 # Source files and their labels
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate-complete.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test.rule
-/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate-complete.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test.rule
+/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update.rule

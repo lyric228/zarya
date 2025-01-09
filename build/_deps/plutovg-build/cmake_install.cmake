@@ -1,4 +1,4 @@
-# Install script for directory: /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src
+# Install script for directory: /home/lyrix/GitHub/zarya/build/_deps/plutovg-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,18 +43,18 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/plutovg" TYPE FILE FILES "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src/include/plutovg.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/plutovg" TYPE FILE FILES "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src/include/plutovg.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/libplutovg.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/libplutovg.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg/plutovgTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg/plutovgTargets.cmake"
-         "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets.cmake")
+         "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg/plutovgTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -67,27 +67,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg" TYPE FILE FILES "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg" TYPE FILE FILES "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg" TYPE FILE FILES "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg" TYPE FILE FILES "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/CMakeFiles/Export/f6ef2f3f18222bc8084975f00f853305/plutovgTargets-relwithdebinfo.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/plutovg" TYPE FILE FILES
-    "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/plutovgConfig.cmake"
-    "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/plutovgConfigVersion.cmake"
+    "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/plutovgConfig.cmake"
+    "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/plutovgConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/examples/cmake_install.cmake")
+  include("/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/examples/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/install_local_manifest.txt"
+  file(WRITE "/home/lyrix/GitHub/zarya/build/_deps/plutovg-build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

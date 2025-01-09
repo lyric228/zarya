@@ -1,3 +1,0 @@
-/home/lyrix/Apps/vscode/projects/zarya/build/external/hello_imgui/src/hello_imgui/plutosvg-subbuild/CMakeFiles/plutosvg-populate.dir
-/home/lyrix/Apps/vscode/projects/zarya/build/external/hello_imgui/src/hello_imgui/plutosvg-subbuild/CMakeFiles/edit_cache.dir
-/home/lyrix/Apps/vscode/projects/zarya/build/external/hello_imgui/src/hello_imgui/plutosvg-subbuild/CMakeFiles/rebuild_cache.dir

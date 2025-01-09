@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build/examples//CMakeFiles/progress.marks
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles /home/lyrix/GitHub/zarya/build/_deps/plutovg-build/examples//CMakeFiles/progress.marks
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/clean
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/preinstall
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/preinstall
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
 .PHONY : _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ smiley: _deps/plutovg-build/examples/CMakeFiles/smiley.dir/rule
 
 # fast build rule for target.
 smiley/fast:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build
 .PHONY : smiley/fast
 
 smiley.o: smiley.c.o
@@ -180,7 +180,7 @@ smiley.o: smiley.c.o
 
 # target to build an object file
 smiley.c.o:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o
 .PHONY : smiley.c.o
 
 smiley.i: smiley.c.i
@@ -188,7 +188,7 @@ smiley.i: smiley.c.i
 
 # target to preprocess a source file
 smiley.c.i:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.i
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.i
 .PHONY : smiley.c.i
 
 smiley.s: smiley.c.s
@@ -196,7 +196,7 @@ smiley.s: smiley.c.s
 
 # target to generate assembly for a file
 smiley.c.s:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.s
+	cd /home/lyrix/GitHub/zarya/build && $(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.s
 .PHONY : smiley.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lyrix/GitHub/zarya/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

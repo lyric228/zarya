@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src/examples/smiley.c" "_deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o" "gcc" "_deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o.d"
+  "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src/examples/smiley.c" "_deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o" "gcc" "_deps/plutovg-build/examples/CMakeFiles/smiley.dir/smiley.c.o.d"
   "" "_deps/plutovg-build/examples/smiley" "gcc" "_deps/plutovg-build/examples/CMakeFiles/smiley.dir/link.d"
   )
 

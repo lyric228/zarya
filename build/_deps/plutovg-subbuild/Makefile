@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,16 +87,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target

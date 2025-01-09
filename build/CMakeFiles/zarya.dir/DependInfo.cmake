@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lyrix/Apps/vscode/projects/zarya/src/functions/functions.cpp" "CMakeFiles/zarya.dir/src/functions/functions.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/functions/functions.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/hook/hook.cpp" "CMakeFiles/zarya.dir/src/hook/hook.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/hook/hook.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/imgui/app/app.cpp" "CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/imgui/styles/styles.cpp" "CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/imgui/widgets/widgets.cpp" "CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/imgui/windows/windows.cpp" "CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o.d"
-  "/home/lyrix/Apps/vscode/projects/zarya/src/main.cpp" "CMakeFiles/zarya.dir/src/main.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/main.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/events/events.cpp" "CMakeFiles/zarya.dir/src/events/events.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/events/events.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/functions/functions.cpp" "CMakeFiles/zarya.dir/src/functions/functions.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/functions/functions.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/imgui/app.cpp" "CMakeFiles/zarya.dir/src/imgui/app.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/app.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/imgui/styles/styles.cpp" "CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/styles/styles.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/imgui/widgets/widgets.cpp" "CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/imgui/window/window.cpp" "CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o.d"
+  "/home/lyrix/GitHub/zarya/src/main.cpp" "CMakeFiles/zarya.dir/src/main.cpp.o" "gcc" "CMakeFiles/zarya.dir/src/main.cpp.o.d"
   "" "zarya" "gcc" "CMakeFiles/zarya.dir/link.d"
   )
 

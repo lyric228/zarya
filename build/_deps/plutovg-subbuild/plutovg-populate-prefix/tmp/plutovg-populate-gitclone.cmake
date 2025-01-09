@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt" AND EXISTS "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt" AND
-  "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt" IS_NEWER_THAN "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt")
+if(EXISTS "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt" AND EXISTS "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt" AND
+  "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt" IS_NEWER_THAN "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt'"
+    "'/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src'")
+  message(FATAL_ERROR "Failed to remove directory: '/home/lyrix/GitHub/zarya/build/_deps/plutovg-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -37,7 +37,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"
             clone --no-checkout --progress --config "advice.detachedHead=false" "https://github.com/sammycage/plutovg" "plutovg-src"
-    WORKING_DIRECTORY "/home/lyrix/Apps/vscode/projects/zarya/build/_deps"
+    WORKING_DIRECTORY "/home/lyrix/GitHub/zarya/build/_deps"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -53,7 +53,7 @@ endif()
 execute_process(
   COMMAND "/usr/bin/git"
           checkout "v0.0.8" --
-  WORKING_DIRECTORY "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src"
+  WORKING_DIRECTORY "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -66,22 +66,22 @@ if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src"
+    WORKING_DIRECTORY "/home/lyrix/GitHub/zarya/build/_deps/plutovg-src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src'")
+  message(FATAL_ERROR "Failed to update submodules in: '/home/lyrix/GitHub/zarya/build/_deps/plutovg-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt" "/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt" "/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitclone-lastrun.txt'")
 endif()

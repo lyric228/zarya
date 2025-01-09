@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DPLUTOVG_BUILD_STATIC
 
-C_INCLUDES = -I/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src/include
+C_INCLUDES = -I/home/lyrix/GitHub/zarya/build/_deps/plutovg-src/include
 
-C_FLAGS = -O2 -g -DNDEBUG
+C_FLAGS = -O2 -g -DNDEBUG -fPIC
 

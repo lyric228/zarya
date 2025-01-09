@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitclone.cmake
-source_dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src
-work_dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps
+command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitclone.cmake
+source_dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-src
+work_dir=/home/lyrix/GitHub/zarya/build/_deps
 repository=https://github.com/sammycage/plutovg
 remote=origin
 init_submodules=TRUE

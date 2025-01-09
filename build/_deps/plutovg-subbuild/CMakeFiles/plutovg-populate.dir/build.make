@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild
 
 # Utility rule file for plutovg-populate.
 
@@ -77,60 +77,60 @@ CMakeFiles/plutovg-populate-complete: plutovg-populate-prefix/src/plutovg-popula
 CMakeFiles/plutovg-populate-complete: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build
 CMakeFiles/plutovg-populate-complete: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install
 CMakeFiles/plutovg-populate-complete: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'plutovg-populate'"
-	/usr/bin/cmake -E make_directory /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles
-	/usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate-complete
-	/usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'plutovg-populate'"
+	/usr/bin/cmake -E make_directory /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles
+	/usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate-complete
+	/usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-done
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update:
 .PHONY : plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure: plutovg-populate-prefix/tmp/plutovg-populate-cfgcmd.txt
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-configure
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-gitinfo.txt
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitclone.cmake
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps && /usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitclone.cmake
+	cd /home/lyrix/GitHub/zarya/build/_deps && /usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'plutovg-populate'"
-	/usr/bin/cmake -Dcfgdir= -P /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'plutovg-populate'"
+	/usr/bin/cmake -Dcfgdir= -P /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-mkdir
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch-info.txt
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'plutovg-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'plutovg-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch
+	/usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-patch
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update:
 .PHONY : plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E echo_append
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-build && /usr/bin/cmake -E touch /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-test
 
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update: plutovg-populate-prefix/tmp/plutovg-populate-gitupdate.cmake
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update-info.txt
 plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-update: plutovg-populate-prefix/src/plutovg-populate-stamp/plutovg-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'plutovg-populate'"
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-src && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'plutovg-populate'"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-src && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/plutovg-populate-prefix/tmp/plutovg-populate-gitupdate.cmake
 
 CMakeFiles/plutovg-populate.dir/codegen:
 .PHONY : CMakeFiles/plutovg-populate.dir/codegen
@@ -157,6 +157,6 @@ CMakeFiles/plutovg-populate.dir/clean:
 .PHONY : CMakeFiles/plutovg-populate.dir/clean
 
 CMakeFiles/plutovg-populate.dir/depend:
-	cd /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild /home/lyrix/Apps/vscode/projects/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild /home/lyrix/GitHub/zarya/build/_deps/plutovg-subbuild/CMakeFiles/plutovg-populate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/plutovg-populate.dir/depend
 

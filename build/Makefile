@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyrix/Apps/vscode/projects/zarya
+CMAKE_SOURCE_DIR = /home/lyrix/GitHub/zarya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyrix/Apps/vscode/projects/zarya/build
+CMAKE_BINARY_DIR = /home/lyrix/GitHub/zarya/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles /home/lyrix/Apps/vscode/projects/zarya/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles /home/lyrix/GitHub/zarya/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/Apps/vscode/projects/zarya/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyrix/GitHub/zarya/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,19 +175,6 @@ zarya/fast:
 .PHONY : zarya/fast
 
 #=============================================================================
-# Target rules for targets named stb_hello_imgui
-
-# Build rule for target.
-stb_hello_imgui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_hello_imgui
-.PHONY : stb_hello_imgui
-
-# fast build rule for target.
-stb_hello_imgui/fast:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build
-.PHONY : stb_hello_imgui/fast
-
-#=============================================================================
 # Target rules for targets named imgui
 
 # Build rule for target.
@@ -197,8 +184,190 @@ imgui: cmake_check_build_system
 
 # fast build rule for target.
 imgui/fast:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/imgui.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named implot
+
+# Build rule for target.
+implot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 implot
+.PHONY : implot
+
+# fast build rule for target.
+implot/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot.dir/build
+.PHONY : implot/fast
+
+#=============================================================================
+# Target rules for targets named implot3d
+
+# Build rule for target.
+implot3d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 implot3d
+.PHONY : implot3d
+
+# fast build rule for target.
+implot3d/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build.make libs/imgui_bundle/external/CMakeFiles/implot3d.dir/build
+.PHONY : implot3d/fast
+
+#=============================================================================
+# Target rules for targets named imgui_node_editor
+
+# Build rule for target.
+imgui_node_editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_node_editor
+.PHONY : imgui_node_editor
+
+# fast build rule for target.
+imgui_node_editor/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_node_editor.dir/build
+.PHONY : imgui_node_editor/fast
+
+#=============================================================================
+# Target rules for targets named im_file_dialog
+
+# Build rule for target.
+im_file_dialog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 im_file_dialog
+.PHONY : im_file_dialog
+
+# fast build rule for target.
+im_file_dialog/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build.make libs/imgui_bundle/external/CMakeFiles/im_file_dialog.dir/build
+.PHONY : im_file_dialog/fast
+
+#=============================================================================
+# Target rules for targets named imguizmo
+
+# Build rule for target.
+imguizmo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imguizmo
+.PHONY : imguizmo
+
+# fast build rule for target.
+imguizmo/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build.make libs/imgui_bundle/external/CMakeFiles/imguizmo.dir/build
+.PHONY : imguizmo/fast
+
+#=============================================================================
+# Target rules for targets named imgui_tex_inspect
+
+# Build rule for target.
+imgui_tex_inspect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_tex_inspect
+.PHONY : imgui_tex_inspect
+
+# fast build rule for target.
+imgui_tex_inspect/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_tex_inspect.dir/build
+.PHONY : imgui_tex_inspect/fast
+
+#=============================================================================
+# Target rules for targets named nvg_imgui
+
+# Build rule for target.
+nvg_imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nvg_imgui
+.PHONY : nvg_imgui
+
+# fast build rule for target.
+nvg_imgui/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build.make libs/imgui_bundle/external/CMakeFiles/nvg_imgui.dir/build
+.PHONY : nvg_imgui/fast
+
+#=============================================================================
+# Target rules for targets named imgui_md
+
+# Build rule for target.
+imgui_md: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_md
+.PHONY : imgui_md
+
+# fast build rule for target.
+imgui_md/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_md.dir/build
+.PHONY : imgui_md/fast
+
+#=============================================================================
+# Target rules for targets named imgui_knobs
+
+# Build rule for target.
+imgui_knobs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_knobs
+.PHONY : imgui_knobs
+
+# fast build rule for target.
+imgui_knobs/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_knobs.dir/build
+.PHONY : imgui_knobs/fast
+
+#=============================================================================
+# Target rules for targets named imspinner
+
+# Build rule for target.
+imspinner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imspinner
+.PHONY : imspinner
+
+# fast build rule for target.
+imspinner/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build.make libs/imgui_bundle/external/CMakeFiles/imspinner.dir/build
+.PHONY : imspinner/fast
+
+#=============================================================================
+# Target rules for targets named imgui_toggle
+
+# Build rule for target.
+imgui_toggle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_toggle
+.PHONY : imgui_toggle
+
+# fast build rule for target.
+imgui_toggle/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_toggle.dir/build
+.PHONY : imgui_toggle/fast
+
+#=============================================================================
+# Target rules for targets named imgui_command_palette
+
+# Build rule for target.
+imgui_command_palette: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_command_palette
+.PHONY : imgui_command_palette
+
+# fast build rule for target.
+imgui_command_palette/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build.make libs/imgui_bundle/external/CMakeFiles/imgui_command_palette.dir/build
+.PHONY : imgui_command_palette/fast
+
+#=============================================================================
+# Target rules for targets named imcoolbar
+
+# Build rule for target.
+imcoolbar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imcoolbar
+.PHONY : imcoolbar
+
+# fast build rule for target.
+imcoolbar/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build.make libs/imgui_bundle/external/CMakeFiles/imcoolbar.dir/build
+.PHONY : imcoolbar/fast
+
+#=============================================================================
+# Target rules for targets named stb_hello_imgui
+
+# Build rule for target.
+stb_hello_imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_hello_imgui
+.PHONY : stb_hello_imgui
+
+# fast build rule for target.
+stb_hello_imgui/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/stb_hello_imgui.dir/build
+.PHONY : stb_hello_imgui/fast
 
 #=============================================================================
 # Target rules for targets named plutosvg
@@ -210,7 +379,7 @@ plutosvg: cmake_check_build_system
 
 # fast build rule for target.
 plutosvg/fast:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/plutosvg.dir/build
 .PHONY : plutosvg/fast
 
 #=============================================================================
@@ -223,8 +392,21 @@ hello_imgui: cmake_check_build_system
 
 # fast build rule for target.
 hello_imgui/fast:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/hello_imgui.dir/build
 .PHONY : hello_imgui/fast
+
+#=============================================================================
+# Target rules for targets named imgui_test_engine
+
+# Build rule for target.
+imgui_test_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_test_engine
+.PHONY : imgui_test_engine
+
+# fast build rule for target.
+imgui_test_engine/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/imgui_test_engine.dir/build
+.PHONY : imgui_test_engine/fast
 
 #=============================================================================
 # Target rules for targets named glad
@@ -236,7 +418,7 @@ glad: cmake_check_build_system
 
 # fast build rule for target.
 glad/fast:
-	$(MAKE) $(MAKESILENT) -f external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make external/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build.make libs/imgui_bundle/external/hello_imgui/hello_imgui/src/hello_imgui/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 #=============================================================================
@@ -265,6 +447,95 @@ smiley/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build.make _deps/plutovg-build/examples/CMakeFiles/smiley.dir/build
 .PHONY : smiley/fast
 
+#=============================================================================
+# Target rules for targets named immvision_gl_loader
+
+# Build rule for target.
+immvision_gl_loader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 immvision_gl_loader
+.PHONY : immvision_gl_loader
+
+# fast build rule for target.
+immvision_gl_loader/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision_gl_loader/CMakeFiles/immvision_gl_loader.dir/build
+.PHONY : immvision_gl_loader/fast
+
+#=============================================================================
+# Target rules for targets named immvision
+
+# Build rule for target.
+immvision: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 immvision
+.PHONY : immvision
+
+# fast build rule for target.
+immvision/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build.make libs/imgui_bundle/external/immvision/immvision/src/immvision/CMakeFiles/immvision.dir/build
+.PHONY : immvision/fast
+
+#=============================================================================
+# Target rules for targets named nanovg
+
+# Build rule for target.
+nanovg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nanovg
+.PHONY : nanovg
+
+# fast build rule for target.
+nanovg/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build.make libs/imgui_bundle/external/nanovg/nanovg/CMakeFiles/nanovg.dir/build
+.PHONY : nanovg/fast
+
+#=============================================================================
+# Target rules for targets named imgui_color_text_edit
+
+# Build rule for target.
+imgui_color_text_edit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_color_text_edit
+.PHONY : imgui_color_text_edit
+
+# fast build rule for target.
+imgui_color_text_edit/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build.make libs/imgui_bundle/external/ImGuiColorTextEdit/CMakeFiles/imgui_color_text_edit.dir/build
+.PHONY : imgui_color_text_edit/fast
+
+#=============================================================================
+# Target rules for targets named immapp
+
+# Build rule for target.
+immapp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 immapp
+.PHONY : immapp
+
+# fast build rule for target.
+immapp/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build.make libs/imgui_bundle/external/immapp/immapp/CMakeFiles/immapp.dir/build
+.PHONY : immapp/fast
+
+src/events/events.o: src/events/events.cpp.o
+.PHONY : src/events/events.o
+
+# target to build an object file
+src/events/events.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/events/events.cpp.o
+.PHONY : src/events/events.cpp.o
+
+src/events/events.i: src/events/events.cpp.i
+.PHONY : src/events/events.i
+
+# target to preprocess a source file
+src/events/events.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/events/events.cpp.i
+.PHONY : src/events/events.cpp.i
+
+src/events/events.s: src/events/events.cpp.s
+.PHONY : src/events/events.s
+
+# target to generate assembly for a file
+src/events/events.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/events/events.cpp.s
+.PHONY : src/events/events.cpp.s
+
 src/functions/functions.o: src/functions/functions.cpp.o
 .PHONY : src/functions/functions.o
 
@@ -289,53 +560,29 @@ src/functions/functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/functions/functions.cpp.s
 .PHONY : src/functions/functions.cpp.s
 
-src/hook/hook.o: src/hook/hook.cpp.o
-.PHONY : src/hook/hook.o
+src/imgui/app.o: src/imgui/app.cpp.o
+.PHONY : src/imgui/app.o
 
 # target to build an object file
-src/hook/hook.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/hook/hook.cpp.o
-.PHONY : src/hook/hook.cpp.o
+src/imgui/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app.cpp.o
+.PHONY : src/imgui/app.cpp.o
 
-src/hook/hook.i: src/hook/hook.cpp.i
-.PHONY : src/hook/hook.i
-
-# target to preprocess a source file
-src/hook/hook.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/hook/hook.cpp.i
-.PHONY : src/hook/hook.cpp.i
-
-src/hook/hook.s: src/hook/hook.cpp.s
-.PHONY : src/hook/hook.s
-
-# target to generate assembly for a file
-src/hook/hook.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/hook/hook.cpp.s
-.PHONY : src/hook/hook.cpp.s
-
-src/imgui/app/app.o: src/imgui/app/app.cpp.o
-.PHONY : src/imgui/app/app.o
-
-# target to build an object file
-src/imgui/app/app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app/app.cpp.o
-.PHONY : src/imgui/app/app.cpp.o
-
-src/imgui/app/app.i: src/imgui/app/app.cpp.i
-.PHONY : src/imgui/app/app.i
+src/imgui/app.i: src/imgui/app.cpp.i
+.PHONY : src/imgui/app.i
 
 # target to preprocess a source file
-src/imgui/app/app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app/app.cpp.i
-.PHONY : src/imgui/app/app.cpp.i
+src/imgui/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app.cpp.i
+.PHONY : src/imgui/app.cpp.i
 
-src/imgui/app/app.s: src/imgui/app/app.cpp.s
-.PHONY : src/imgui/app/app.s
+src/imgui/app.s: src/imgui/app.cpp.s
+.PHONY : src/imgui/app.s
 
 # target to generate assembly for a file
-src/imgui/app/app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app/app.cpp.s
-.PHONY : src/imgui/app/app.cpp.s
+src/imgui/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/app.cpp.s
+.PHONY : src/imgui/app.cpp.s
 
 src/imgui/styles/styles.o: src/imgui/styles/styles.cpp.o
 .PHONY : src/imgui/styles/styles.o
@@ -385,29 +632,29 @@ src/imgui/widgets/widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/widgets/widgets.cpp.s
 .PHONY : src/imgui/widgets/widgets.cpp.s
 
-src/imgui/windows/windows.o: src/imgui/windows/windows.cpp.o
-.PHONY : src/imgui/windows/windows.o
+src/imgui/window/window.o: src/imgui/window/window.cpp.o
+.PHONY : src/imgui/window/window.o
 
 # target to build an object file
-src/imgui/windows/windows.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.o
-.PHONY : src/imgui/windows/windows.cpp.o
+src/imgui/window/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/window/window.cpp.o
+.PHONY : src/imgui/window/window.cpp.o
 
-src/imgui/windows/windows.i: src/imgui/windows/windows.cpp.i
-.PHONY : src/imgui/windows/windows.i
+src/imgui/window/window.i: src/imgui/window/window.cpp.i
+.PHONY : src/imgui/window/window.i
 
 # target to preprocess a source file
-src/imgui/windows/windows.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.i
-.PHONY : src/imgui/windows/windows.cpp.i
+src/imgui/window/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/window/window.cpp.i
+.PHONY : src/imgui/window/window.cpp.i
 
-src/imgui/windows/windows.s: src/imgui/windows/windows.cpp.s
-.PHONY : src/imgui/windows/windows.s
+src/imgui/window/window.s: src/imgui/window/window.cpp.s
+.PHONY : src/imgui/window/window.s
 
 # target to generate assembly for a file
-src/imgui/windows/windows.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/windows/windows.cpp.s
-.PHONY : src/imgui/windows/windows.cpp.s
+src/imgui/window/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zarya.dir/build.make CMakeFiles/zarya.dir/src/imgui/window/window.cpp.s
+.PHONY : src/imgui/window/window.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -447,30 +694,49 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... glad"
 	@echo "... hello_imgui"
+	@echo "... im_file_dialog"
+	@echo "... imcoolbar"
 	@echo "... imgui"
+	@echo "... imgui_color_text_edit"
+	@echo "... imgui_command_palette"
+	@echo "... imgui_knobs"
+	@echo "... imgui_md"
+	@echo "... imgui_node_editor"
+	@echo "... imgui_test_engine"
+	@echo "... imgui_tex_inspect"
+	@echo "... imgui_toggle"
+	@echo "... imguizmo"
+	@echo "... immapp"
+	@echo "... immvision"
+	@echo "... immvision_gl_loader"
+	@echo "... implot"
+	@echo "... implot3d"
+	@echo "... imspinner"
+	@echo "... nanovg"
+	@echo "... nvg_imgui"
 	@echo "... plutosvg"
 	@echo "... plutovg"
 	@echo "... smiley"
 	@echo "... stb_hello_imgui"
 	@echo "... zarya"
+	@echo "... src/events/events.o"
+	@echo "... src/events/events.i"
+	@echo "... src/events/events.s"
 	@echo "... src/functions/functions.o"
 	@echo "... src/functions/functions.i"
 	@echo "... src/functions/functions.s"
-	@echo "... src/hook/hook.o"
-	@echo "... src/hook/hook.i"
-	@echo "... src/hook/hook.s"
-	@echo "... src/imgui/app/app.o"
-	@echo "... src/imgui/app/app.i"
-	@echo "... src/imgui/app/app.s"
+	@echo "... src/imgui/app.o"
+	@echo "... src/imgui/app.i"
+	@echo "... src/imgui/app.s"
 	@echo "... src/imgui/styles/styles.o"
 	@echo "... src/imgui/styles/styles.i"
 	@echo "... src/imgui/styles/styles.s"
 	@echo "... src/imgui/widgets/widgets.o"
 	@echo "... src/imgui/widgets/widgets.i"
 	@echo "... src/imgui/widgets/widgets.s"
-	@echo "... src/imgui/windows/windows.o"
-	@echo "... src/imgui/windows/windows.i"
-	@echo "... src/imgui/windows/windows.s"
+	@echo "... src/imgui/window/window.o"
+	@echo "... src/imgui/window/window.i"
+	@echo "... src/imgui/window/window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
