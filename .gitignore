@@ -126,3 +126,4 @@ vcpkg*/
 .pyodide-xbuildenv*
 pyodide_tests/
 hello_imgui.ini
+/libs
