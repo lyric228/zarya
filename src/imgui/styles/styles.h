@@ -1,8 +1,8 @@
-#ifndef STYLES_H
-#define STYLES_H
+#pragma once
 
 #include <imgui.h>
 
-void setStyles();
 
-#endif
+namespace Styles {
+	static void setStyles();
+};

@@ -1,41 +1,29 @@
-// #pragma once
+#pragma once
 
-// #include <unordered_map>
-// #include <functional>
-// #include <algorithm>
-// #include <vector>
-// #include <string>
-// #include <any>
+#include <unordered_map>
+#include <algorithm>
+#include <any>
+#include "../types/types.h"
 
-// using std::unordered_map;
-// using std::function;
-// using std::string;
-// using std::vector;
-// using std::any;
+using std::unordered_map;
+using std::any;
 
 
-// namespace EventEmitter {
-//     unordered_map<string, function<any(vector<any>)>> events;
+namespace EventEmitter {
+    unordered_map<ustr, function<any(vector<any>)>> events;
 
-//     /*
-//      *  string
-//      */
+    /*
+     *  universal string
+     */
 
-//     void off(string eventName);
-//     void on(string eventName, function<any(vector<any>)> eventFunc);
-//     void once(string eventName, function<any(vector<any>)> eventFunc);
-//     any emit(string eventName, vector<any> args = {});
+    void off(ustr eventName);
+    void on(ustr eventName, function<any(vector<any>)> eventFunc);
+    void once(ustr eventName, function<any(vector<any>)> eventFunc);
+    any emit(ustr eventName, vector<any> args);
 
-//     /*
-//      *  other types
-//      */
+    /*
+     *  no args emit
+     */
 
-//     template <typename T>
-//     void off(const T* eventName);
-//     template <typename T>
-//     void on(const T* eventName, function<any(vector<any>)> eventFunc);
-//     template <typename T>
-//     void once(const T* eventName, function<any(vector<any>)> eventFunc);
-//     template <typename T>
-//     any emit(const T* eventName, vector<any> args = {});
-// };
+    any emit(const ustr eventName);
+};

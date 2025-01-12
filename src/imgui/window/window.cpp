@@ -1,56 +1,27 @@
 #include "window.h"
 
 
-namespace App {
-    void ImGuiWindows::ShowButtonsMenu() {
-        ImGuiWindows::CreateButton("Player", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::PlayerButtonEventHander);
-        ImGuiWindows::CreateButton("World", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::WorldButtonEventHander);
-        ImGuiWindows::CreateButton("ESP", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::ESPButtonEventHander);
-        ImGuiWindows::CreateButton("Visuals", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::VisualsButtonEventHander);
-        ImGuiWindows::CreateButton("Settings", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::SettingsButtonEventHander);
-        ImGuiWindows::CreateButton("Debug", 320.0f, 48.0f, 0.0f, 4.0f, ButtonEvents::DebugButtonEventHander);
-    };
+void Window::ShowButtonsMenu() {
+    Window::CreateButton("Player", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::PlayerButtonEventHander);
+    Window::CreateButton("World", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::WorldButtonEventHander);
+    Window::CreateButton("ESP", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::ESPButtonEventHander);
+    Window::CreateButton("Visuals", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::VisualsButtonEventHander);
+    Window::CreateButton("Settings", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::SettingsButtonEventHander);
+    Window::CreateButton("Debug", 320.0f, 48.0f, 0.0f, 4.0f, ButtonHandlers::DebugButtonEventHander);
+}
 
-    void ImGuiWindows::CreateButton(
-        const char *label,
-        const float& size_x,
-        const float& size_y,
-        const float& psize_x,
-        const float& psize_y,
-        void (*callback)()
-    ) {
-        ImGui::Dummy(ImVec2(psize_x, psize_y));
+void Window::CreateButton(
+    const char* label,
+    const float& sizeX,
+    const float& sizeY,
+    const float& psizeX,
+    const float& psizeY,
+    const function<void()>& callback
+) {
+    ImGui::Dummy(ImVec2(psizeX, psizeY));
 
-        if (ImGui::Button(label, ImVec2(size_x, size_y))) {
-            callback();
-            // print(label);
-        };
-    };
-};
-
-
-namespace ButtonEvents {
-    void PlayerButtonEventHander() {
-
-    };
-
-    void WorldButtonEventHander() {
-
-    };
-
-    void ESPButtonEventHander() {
-
-    };
-
-    void VisualsButtonEventHander() {
-
-    };
-
-    void SettingsButtonEventHander() {
-
-    };
-
-    void DebugButtonEventHander() {
-        
-    };
-};
+    if (ImGui::Button(label, ImVec2(sizeX, sizeY))) {
+        log("Button pressed: " + ustr(label));
+        callback();
+    }
+}

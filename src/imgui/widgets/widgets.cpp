@@ -8,10 +8,10 @@ namespace Widgets {
         ImGui::TextUnformatted(text);
         ImGui::PopTextWrapPos();
         ImGui::EndTooltip();
-    };
+    }
 
     static void HelpMarker(const char* desc) {
         ImGui::TextDisabled("(?)");
         if (ImGui::IsItemHovered()) ShowHelpText(desc);
-    };
-};
+    }
+}

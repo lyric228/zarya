@@ -1,11 +1,10 @@
 #pragma once
 
+#include <sstream>
 #include <iostream>
-#include <locale>
-#include <string_view>
-
-using std::string_view;
+#include "types/types.h"
+#include "types/debug.h"
 
 
-template <typename T>
-void print(const T* text);
+void log(const ustr& text);
+void log();

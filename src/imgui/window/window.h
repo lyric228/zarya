@@ -1,26 +1,24 @@
 #pragma once
 
 #include <imgui.h>
-#include "config/types.h"
+#include "functions/functions.h"
 
 
-namespace App {
-    class ImGuiWindows {
-    public:
-        static void ShowButtonsMenu();
-        static void CreateButton(
-            const char *label,
-            const float& size_x,
-            const float& size_y,
-            const float& psize_x,
-            const float& psize_y,
-            void (*callback)()
-        );
-    };
+class Window {
+public:
+    static void ShowButtonsMenu();
+    static void CreateButton(
+        const char *label,
+        const float& size_x,
+        const float& size_y,
+        const float& psize_x,
+        const float& psize_y,
+        const function<void ()>& callback
+    );
 };
 
 
-namespace ButtonEvents {
+namespace ButtonHandlers {
     void PlayerButtonEventHander();
 
     void WorldButtonEventHander();
@@ -32,4 +30,4 @@ namespace ButtonEvents {
     void SettingsButtonEventHander();
 
     void DebugButtonEventHander();
-};
+}

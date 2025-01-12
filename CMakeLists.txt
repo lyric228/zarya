@@ -18,14 +18,32 @@ include_directories(
 )
 
 set(SOURCES
-    "src/config/config.h"
-    "src/config/types.h"
+    "src/types/debug.h"
+    "src/types/types.h"
 
     "src/events/events.cpp"
     "src/events/events.h"
 
     "src/functions/functions.cpp"
     "src/functions/functions.h"
+
+    "src/imgui/handlers/debug/debug.cpp"
+    "src/imgui/handlers/debug/debug.h"
+
+    "src/imgui/handlers/esp/esp.cpp"
+    "src/imgui/handlers/esp/esp.h"
+
+    "src/imgui/handlers/player/player.cpp"
+    "src/imgui/handlers/player/player.h"
+
+    "src/imgui/handlers/settings/settings.cpp"
+    "src/imgui/handlers/settings/settings.h"
+
+    "src/imgui/handlers/visuals/visuals.cpp"
+    "src/imgui/handlers/visuals/visuals.h"
+
+    "src/imgui/handlers/world/world.cpp"
+    "src/imgui/handlers/world/world.h"
 
     "src/imgui/styles/styles.cpp"
     "src/imgui/styles/styles.h"
