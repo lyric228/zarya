@@ -1,6 +1,12 @@
 [package]
 name = "zarya"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
-[dependencies]
+[dependencies.egui]
+version = "0.31.0"
+features = ["default_fonts"]
+
+[dependencies.egui_glow]
+version = "0.31.0"
+features = ["winit"]
